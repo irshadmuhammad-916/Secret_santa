@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>drawnames – Secret Santa</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f5f6f7;
+}
+
+/* HEADER */
+.header {
+  background: #ffffff;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+  color: #d32f2f;
+}
+
+.logged {
+  font-size: 14px;
+  color: #444;
+}
+
+/* CONTENT */
+.container {
+  padding: 20px 16px 40px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+/* NAME BOX */
+.name-box {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 18px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  color: #1a73e8;
+  margin-bottom: 24px;
+}
+
+/* WISHLIST HEADER */
+.wishlist-header {
+  background: #1a73e8;
+  color: #ffffff;
+  padding: 16px;
+  border-radius: 8px 8px 0 0;
+  text-align: center;
+}
+
+.wishlist-header strong {
+  font-size: 18px;
+}
+
+.wishlist-header span {
+  display: block;
+  font-size: 14px;
+  opacity: 0.9;
+  margin-top: 4px;
+}
+
+/* WISHLIST CARD */
+.wishlist {
+  background: #ffffff;
+  border-radius: 0 0 8px 8px;
+  padding: 12px;
+}
+
+/* ITEM */
+.item {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.checkbox {
+  margin-right: 10px;
+}
+
+.item img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  margin-right: 12px;
+}
+
+.item-details {
+  flex: 1;
+}
+
+.item-details strong {
+  font-size: 16px;
+  color: #333;
+}
+
+.item-details div {
+  font-size: 14px;
+  color: #666;
+  margin-top: 2px;
+}
+
+.view-btn {
+  background: #1a73e8;
+  color: #ffffff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* FOOTER NOTE */
+.note {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 12px;
+  color: #888;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-left">
+    <div class="logo">drawnames</div>
+  </div>
+  <div class="logged">Logged in</div>
+</div>
+
+<!-- CONTENT -->
+<div class="container">
+
+  <div class="title">My drawn name</div>
+
+  <div class="name-box">
+    Anushka Sharma
+  </div>
+
+  <div class="wishlist-header">
+    <strong>Wish list for Anushka Sharma</strong>
+    <span>3 gifts</span>
+  </div>
+
+  <div class="wishlist">
+
+    <div class="item">
+      <input type="checkbox" class="checkbox">
+      <img src="https://via.placeholder.com/80?text=Sunglasses">
+      <div class="item-details">
+        <strong>HAZON® Premium</strong>
+        <div>HAZON</div>
+        <div>M-Medium – Sunglasses</div>
+      </div>
+      <div class="view-btn">View details</div>
+    </div>
+
+    <div class="item">
+      <input type="checkbox" class="checkbox">
+      <img src="https://via.placeholder.com/80?text=Perfume">
+      <div class="item-details">
+        <strong>Luxury Perfume</strong>
+        <div>Floral fragrance</div>
+      </div>
+      <div class="view-btn">View details</div>
+    </div>
+
+    <div class="item">
+      <input type="checkbox" class="checkbox">
+      <img src="https://via.placeholder.com/80?text=Mug">
+      <div class="item-details">
+        <strong>Christmas Mug</strong>
+        <div>Festive design</div>
+      </div>
+      <div class="view-btn">View details</div>
+    </div>
+
+  </div>
+
+  <div class="note">
+    🎄 Office Secret Santa – Demo page
+  </div>
+
+</div>
+
+</body>
+</html>
